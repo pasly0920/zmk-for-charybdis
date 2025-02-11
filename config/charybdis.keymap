@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-&out OUT_BLE
-
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -81,6 +79,8 @@
 
     keymap {
         compatible = "zmk,keymap";
+
+        &out OUT_BLE
 
         Base {
             bindings = <
